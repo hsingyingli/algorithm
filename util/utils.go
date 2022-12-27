@@ -22,6 +22,13 @@ func CreateRandomArray(n int) []int {
 	return rand.Perm(n)
 }
 
+func Max(a int, b int) int {
+	if a > b {
+		return a
+	}
+	return b
+}
+
 func init() {
 	rand.Seed(time.Now().Unix())
 }
