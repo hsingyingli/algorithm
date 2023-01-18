@@ -25,6 +25,8 @@ type Node struct {
 	right  *Node
 	parent *Node
 	value  int
+
+	size int
 }
 
 func BuildBST(root *Node, value int) {
