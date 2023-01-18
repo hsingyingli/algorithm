@@ -2,7 +2,6 @@ package bst
 
 import (
 	"github/hsingyingli/data-structure-and-algorithm/util"
-	"log"
 	"testing"
 
 	"github.com/stretchr/testify/require"
@@ -12,7 +11,6 @@ func TestBuildAVL(t *testing.T) {
 	for round := 0; round < 100; round++ {
 
 		sequence := util.CreateRandomArray(20)
-		log.Println(sequence)
 		root := &Node{
 			value: sequence[0],
 			size:  0,

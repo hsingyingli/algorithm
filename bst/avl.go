@@ -29,7 +29,6 @@ func BuildAVL(root *Node, value int) *Node {
 	root.size = 1 + util.Max(height(root.right), height(root.left))
 
 	return root.balancing()
-
 }
 
 func (node *Node) rotateRight() *Node {
